@@ -12,7 +12,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Etapa 2: Imagem Final
-FROM eclipse-temurin:17-jdk-alpine
+FROM eclipse-temurin:17-jre
 
 # Define o diretório de trabalho dentro do contêiner
 WORKDIR /app
